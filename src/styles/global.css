@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Poppins:ital,wght@0,300;0,500;1,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins bg-blue-50;
+  }
+}
+
+@layer components {
+  /* stories component */
+  .header_style {
+    @apply font-bold text-center tracking-wider text-xl;
+  }
+  .header_div {
+    @apply flex justify-center items-center flex-col gap-4;
+  }
+  .main_div {
+    @apply bg-white tracking-wide shadow-md rounded space-y-4 p-5 lg:w-3/6 w-80;
+  }
+  .div_title {
+    @apply text-xl font-bold;
+  }
+  .div_author {
+    @apply text-gray-400 text-sm;
+  }
+  .div_btn {
+    @apply flex justify-between;
+  }
+  .primary_btn {
+    @apply bg-primary text-white px-4 py-2 text-sm rounded;
+  }
+   .secondary_btn{
+    @apply bg-primary text-white px-4 py-2 text-sm  hover:bg-red-700 rounded transition duration-300;
+  }
+  /* search component */
+  .search_div {
+    @apply flex justify-center items-center text-center py-5;
+  }
+  .form_div {
+    @apply space-y-6;
+  }
+  .input_style {
+    @apply border-b-2 border-primary focus:outline-none p-2 lg:w-80 w-60;
+  }
+  /* pagination component */
+  .pagination_div {
+    @apply flex justify-center items-center space-x-4 pb-5;
+  }
+  .pagination_btn {
+    @apply bg-primary text-white  px-4 py-2 rounded text-sm;
+  }
+}
